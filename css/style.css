@@ -8,6 +8,8 @@
 html {
     font-size: 100%;
     font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+
 }
 
 /* Common */
@@ -50,6 +52,10 @@ html {
     content: '';
     display: table;
     clear: both;
+}
+
+.hidden {
+    visibility: hidden;
 }
 
 a,
@@ -229,7 +235,6 @@ main h2 {
 
 main h3 {
     font-size: 1.5em;
-    padding-top: 0.5em;
 }
 
 main h4 {
@@ -298,12 +303,16 @@ span.billing-type {
     width: calc(100% / 3 - 40px);
     /* height: 800px; */
     background-color: white;
-    padding-bottom: 10em;
     border: 1px solid lightgrey;
 }
 
 .container-col-plans .col-plan:nth-child(2) {
     margin: 0 60px 0 60px;
+}
+
+.container-col-plans .col-plan:last-child {
+    width: 100%;
+    margin-top: 3em;
 }
 
 .col-plan .for-who {
@@ -313,16 +322,20 @@ span.billing-type {
 }
 
 .col-plan .container-offer {
-    padding: 0 2em;
-}
-
-.col-plan .offer {
-    padding: 1em 0 0 0;
+    padding: 2em 2em 2em 2em;
 }
 
 p.grey {
     color: grey;
     font-size: 0.9em;
+}
+
+p.offer-black {
+    font-size: 0.9em;
+}
+
+.first-row .desc-offer {
+    padding-bottom: 10em;
 }
 
 .desc-offer ul {
@@ -377,4 +390,12 @@ span.purchase a:focus {
 .hightlights .fa-check {
     color: var(--blue);
     font-size: 1.2em;
+}
+
+.col-plan.second-row .col-left {
+    width: 80%;
+}
+
+.col-plan.second-row .col-right {
+    width: 20%;
 }

@@ -57,7 +57,7 @@
                     </div>
                     <p class="jumbo-desc-little">Annulla in qualsiasi momento</p>
                     <div class="arrow-down">
-                        <a href="#">
+                        <a href="#plans">
                             <i class="fas fa-arrow-down"></i>
                         </a>
                     </div>
@@ -77,18 +77,21 @@
     <!-- main -->
     <main>
         <!-- piani tariffari -->
-        <section class="plans width-70">
-            <h2>Trova il piano Dropbox Business che fa per te</h2>
+        <section class="plans width-70" id="plans">
+            <header>
+                <h2>Trova il piano Dropbox Business che fa per te</h2>
+                
+                <!-- fatturazione mensile o annuale -->
+                <div class="billing">
+                    <span class="circle bordered"></span><span class="billing-type">Fatturazione mensile</span>
+                    <span class="circle empty"></span><span class="billing-type">Fatturazione annuale</span>
+                </div>
+                <!-- /fatturazione mensile o annuale -->
 
-            <!-- fatturazione mensile o annuale -->
-            <div class="billing">
-                <span class="circle bordered"></span><span class="billing-type">Fatturazione mensile</span>
-                <span class="circle empty"></span><span class="billing-type">Fatturazione annuale</span>
-            </div>
-            <!-- /fatturazione mensile o annuale -->
+            </header>
 
             <div class="container-col-plans clearfix">
-                <div class="col-plan float-left">
+                <div class="col-plan first-row float-left">
                     <div class="for-who">
                         <i class="far fa-user"></i> Singolo
                     </div>
@@ -172,13 +175,21 @@
                                             Assistenza prioritaria via email e chat
                                         </div>
                                     </li>
+                                    <li class="clearfix hidden">
+                                        <div class="li-icon float-left">
+                                            <i class="fas fa-check"></i>
+                                        </div>
+                                        <div class="li-desc float-left">
+                                            Assistenza prioritaria via email e chat
+                                        </div>
+                                    </li>
                                 </ul>
                             </div> 
 
                         </div>
                     </div>
                 </div>
-                <div class="col-plan float-left">
+                <div class="col-plan first-row float-left">
                     <div class="for-who">
                         <i class="far fa-building"></i> Team
                     </div>
@@ -276,7 +287,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-plan float-left">
+                <div class="col-plan first-row float-left">
                     <div class="for-who">
                         <i class="far fa-building"></i> Team
                     </div>
@@ -374,7 +385,31 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-plan second-row float-left">
+                    <div class="for-who">
+                        <i class="far fa-building"></i> Team
+                    </div>
+                    <div class="container-offer clearfix">
+                        <div class="col-left float-left">
+                            <div class="offer">
+                                <h3>Enterprise</h3>
+                                <h4>Contatta l'ufficio vendite per i prezzi</h4>
+                            </div>
+                            <div class="desc-offer">
+                                <p class="offer-black">Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
+                                    su qualsiasi scala.</p>
+                            </div>
+                        </div>
+                        <div class="col-right float-left">
+                            <div class="btn-blue">
+                                <a href="#">Contatta l'ufficio vendite</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </section>
         <!-- /piani tariffari -->
 
