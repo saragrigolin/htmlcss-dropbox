@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css">
     <title>Dropbox</title>
 </head>
@@ -17,9 +20,9 @@
     <header>
 
         <!-- nav -->
-        <nav>
+        <nav class="clearfix">
             <div class="col-logo">
-                <img src="img/logo-small.png" alt="logo di dropbox">
+                <a href=""><img src="img/logo-small.png" alt="logo di dropbox"></a>
             </div>
             <div class="col-menu-first">
                 <ul class="nav-menu">
@@ -28,7 +31,7 @@
                     <li><a href="#">Piani e prezzi</a></li>
                 </ul>
             </div>
-            <div class="col-btn">
+            <div class="col-btn btn-blue">
                 <a href="#">Inizia</a>
             </div>
             <div class="col-menu-second">
@@ -42,7 +45,30 @@
         <!-- /nav -->
 
         <!-- jumbotron -->
-        <section class="jumbotron"></section>
+        <section class="jumbotron">
+            <div class="jumbo-container clearfix width-80 padding-tb-5">
+                <h1 class="jumbo-title">Tutto ci&ograve; che ti serve per il lavoro, in un unico posto</h1>
+                <div class="col-jumbo-left">
+                    <p class="jumbo-desc">Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accessibili dallo stesso posto.
+                        Dropbox Business &egrave; pi&ugrave; di uno spazio di archiviazione sicuro: &egrave; un modo intelligente e
+                        integrato per ottimizzare il flusso di lavoro esistente.</p>
+                    <div class="btn-blue">
+                        <a href="#">Inizia la tua prova gratuita</a>
+                    </div>
+                    <p class="jumbo-desc-little">Annulla in qualsiasi momento</p>
+                    <div class="arrow-down">
+                        <a href="#">
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-jumbo-right">
+                    <div class="jumbo-img">
+                        <img src="img/jumbo.png" alt="schermata dropbox business">
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- /jumbotron -->
 
     </header>

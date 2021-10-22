@@ -11,6 +11,11 @@ html {
 }
 
 /* Common */
+:root {
+  --blue: #0061FF;
+  --light-blue: #B4D0E7;
+}
+
 .width-70 {
     width: 70%;
     margin: 0 auto;
@@ -19,6 +24,36 @@ html {
 .width-80 {
     width: 80%;
     margin: 0 auto;
+}
+
+.padding-tb-5 {
+    padding: 5% 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    padding: 8px 15px;
+    font-size: 0.9em;
+} 
+
+.btn-blue a,
+.btn-blue a:hover,
+.btn-blue a:focus,
+.btn-blue a:active {
+    color: white;
 }
 
 /* Test layout */
@@ -42,12 +77,12 @@ header nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 }
 
 header .jumbotron {
     width: 100%;
-    height: 700px;
-    background-color: lightblue;
+    background-color: var(--light-blue);
     margin-top: 80px;
 }
 
@@ -109,17 +144,7 @@ nav .col-menu-second {
 
 nav .col-btn {
     float: right;
-    background-color: #0061FF;
-    padding: 5px 15px;
     margin: 25px 0;
-}
-
-.col-btn a,
-.col-btn a:hover,
-.col-btn a:focus,
-.col-btn a:active {
-    text-decoration: none;
-    color: white;
 }
 
 nav .col-logo img {
@@ -153,5 +178,63 @@ ul.nav-menu a:focus {
 ul.nav-menu a:hover,
 ul.nav-menu a:active,
 ul.nav-menu a:focus {
-    border-bottom: 2px solid #0061FF;
+    border-bottom: 2px solid var(--blue);
+}
+
+.jumbotron .btn-blue {
+    display: inline-block;
+}
+
+.jumbotron h1.jumbo-title {
+    font-size: 4.7em;
+    padding-bottom: 0.6em;
+}
+
+.col-jumbo-left {
+    float: left;
+    width: 35%;
+    padding-right: 3.5em;
+}
+
+.col-jumbo-right {
+    float: left;
+    width: 65%;
+    position: relative;
+}
+
+.jumbo-desc {
+    padding-bottom: 1.5em;
+}
+
+.col-jumbo-left .btn-blue {
+    font-size: 1.1em;
+}
+
+.jumbo-desc-little {
+    padding-top: 0.9em;
+    padding-bottom: 3em;
+    font-size: 0.9em;
+}
+
+
+.arrow-down i {
+    font-size: 2.5em;
+}
+
+.arrow-down a,
+.arrow-down a:hover,
+.arrow-down a:focus,
+.arrow-down a:active {
+    color: black;
+}
+
+
+.jumbo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-jumbo-right img {
+    width: 100%;
 }
