@@ -10,6 +10,17 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Common */
+.width-70 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.width-80 {
+    width: 80%;
+    margin: 0 auto;
+}
+
 /* Test layout */
 body {
     width: 100%;
@@ -25,7 +36,8 @@ header {
 
 header nav {
     width: 100%;
-    height: 100px;
+    height: 80px;
+    padding: 0 25px;
     background-color: white;
     position: fixed;
     top: 0;
@@ -36,16 +48,11 @@ header .jumbotron {
     width: 100%;
     height: 700px;
     background-color: lightblue;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 main {
     width: 100%;
-}
-
-.width-70 {
-    width: 70%;
-    margin: 0 auto;
 }
 
 main .plans {
@@ -81,4 +88,70 @@ main .faq {
 footer {
     height: 600px;
     background-color: black;
+}
+
+nav .col-logo {
+    width: 10%;
+    padding: 25px 0;
+    /* height: 100%; */
+    float: left;
+}
+
+nav .col-menu-first {
+    width: 30%;
+    float: left;
+}
+
+nav .col-menu-second {
+    width: 30%;
+    float: right;
+}
+
+nav .col-btn {
+    float: right;
+    background-color: #0061FF;
+    padding: 5px 15px;
+    margin: 25px 0;
+}
+
+.col-btn a,
+.col-btn a:hover,
+.col-btn a:focus,
+.col-btn a:active {
+    text-decoration: none;
+    color: white;
+}
+
+nav .col-logo img {
+    height: 100%;
+    vertical-align: middle;
+}
+
+nav ul.nav-menu {
+    list-style-type: none;
+    line-height: 30px;
+    vertical-align: middle;
+}
+
+ul.nav-menu > li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+ul.nav-menu a,
+ul.nav-menu a:hover,
+ul.nav-menu a:active,
+ul.nav-menu a:focus {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    height: 80px;
+    width: 100%;
+    padding: 25px 0;
+}
+
+ul.nav-menu a:hover,
+ul.nav-menu a:active,
+ul.nav-menu a:focus {
+    border-bottom: 2px solid #0061FF;
 }
