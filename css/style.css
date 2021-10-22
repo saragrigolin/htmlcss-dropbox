@@ -16,6 +16,22 @@ html {
   --light-blue: #B4D0E7;
 }
 
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
 .width-70 {
     width: 70%;
     margin: 0 auto;
@@ -45,7 +61,7 @@ a:active {
 
 .btn-blue {
     background-color: var(--blue);
-    padding: 8px 15px;
+    padding: 7px 20px;
     font-size: 0.9em;
 } 
 
@@ -62,12 +78,14 @@ body {
     min-width: 600px;
     max-width: 2000px;
     margin: 0 auto;
-    background-color: pink;
 }
 
-header {
-    position: relative;
+footer {
+    height: 600px;
+    background-color: black;
 }
+
+/* Header */
 
 header nav {
     width: 100%;
@@ -80,70 +98,20 @@ header nav {
     z-index: 9999;
 }
 
-header .jumbotron {
-    width: 100%;
-    background-color: var(--light-blue);
-    margin-top: 80px;
-}
-
-main {
-    width: 100%;
-}
-
-main .plans {
-    height: 1000px;
-    background-color: lightgreen;
-}
-
-main .partner {
-    height: 500px;
-    background-color: lightgrey;
-}
-
-main .dropbox-features {
-    height: 1200px;
-    background-color: lightsalmon;
-}
-
-main .teams {
-    height: 700px;
-    background-color: lightyellow;
-}
-
-main .trial {
-    height: 400px;
-    background-color: lightseagreen;
-}
-
-main .faq {
-    height: 800px;
-    background-color: salmon;
-}
-
-footer {
-    height: 600px;
-    background-color: black;
-}
-
 nav .col-logo {
     width: 10%;
     padding: 25px 0;
-    /* height: 100%; */
-    float: left;
 }
 
 nav .col-menu-first {
     width: 30%;
-    float: left;
 }
 
 nav .col-menu-second {
     width: 30%;
-    float: right;
 }
 
 nav .col-btn {
-    float: right;
     margin: 25px 0;
 }
 
@@ -181,6 +149,14 @@ ul.nav-menu a:focus {
     border-bottom: 2px solid var(--blue);
 }
 
+/* Jumbotron */
+
+header .jumbotron {
+    width: 100%;
+    background-color: var(--light-blue);
+    margin-top: 80px;
+}
+
 .jumbotron .btn-blue {
     display: inline-block;
 }
@@ -191,15 +167,12 @@ ul.nav-menu a:focus {
 }
 
 .col-jumbo-left {
-    float: left;
     width: 35%;
     padding-right: 3.5em;
 }
 
 .col-jumbo-right {
-    float: left;
     width: 65%;
-    position: relative;
 }
 
 .jumbo-desc {
@@ -230,11 +203,138 @@ ul.nav-menu a:focus {
 
 
 .jumbo-img {
-    position: absolute;
     top: 0;
     left: 0;
 }
 
 .col-jumbo-right img {
     width: 100%;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    padding-top: 10em;
+}
+
+main h2 {
+    font-size: 2.5em;
+    padding: 2em 0 1.5em 0;
+}
+
+main h3 {
+    font-size: 1.5em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+main h4 {
+    font-size: 0.9em;
+    padding: 0.5em 0 0.5em 0;
+}
+
+main .plans {
+    height: 1000px;
+    background-color: lightgreen;
+}
+
+main .partner {
+    height: 500px;
+    background-color: lightgrey;
+}
+
+main .dropbox-features {
+    height: 1200px;
+    background-color: lightsalmon;
+}
+
+main .teams {
+    height: 700px;
+    background-color: lightyellow;
+}
+
+main .trial {
+    height: 400px;
+    background-color: lightseagreen;
+}
+
+main .faq {
+    height: 800px;
+    background-color: salmon;
+}
+
+/* Piani tariffari */
+
+span.circle {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+}
+
+span.circle.bordered {
+    border: 3px solid var(--blue);
+}
+
+span.circle.empty {
+    border: 1px solid grey;
+}
+
+.billing > span {
+    line-height: 15px;
+    vertical-align: middle;
+}
+
+span.billing-type {
+    padding-left: 0.2em;
+    padding-right: 3em;
+}
+
+.container-col-plans .col-plan {
+    width: calc(100% / 3 - 40px);
+    height: 600px;
+    background-color: white;
+    margin-top: 2em;
+    border: 1px solid lightgrey;
+}
+
+.container-col-plans .col-plan:nth-child(2) {
+    margin: 2em 60px 0em 60px;
+}
+
+.col-plan .for-who {
+    text-align: center;
+    padding: 0.5em 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.col-plan .container-offer {
+    padding: 0 2em;
+}
+
+.col-plan .offer {
+    padding: 1em 0;
+}
+
+p.grey {
+    color: grey;
+    font-size: 0.9em;
+}
+
+.desc-offer ul {
+    list-style-type: none;
+    font-size: 0.8em;
+}
+
+.desc-offer li {
+    padding-bottom: 1em;
+    font-size: 1.1em;
+}
+
+.desc-offer .li-icon {
+    width: 7%;
+}
+
+.desc-offer .li-desc {
+    width: 93%;
 }
