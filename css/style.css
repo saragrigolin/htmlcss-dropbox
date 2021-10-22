@@ -63,6 +63,7 @@ a:active {
     background-color: var(--blue);
     padding: 7px 20px;
     font-size: 0.9em;
+    text-align: center;
 } 
 
 .btn-blue a,
@@ -70,6 +71,9 @@ a:active {
 .btn-blue a:focus,
 .btn-blue a:active {
     color: white;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
 }
 
 /* Test layout */
@@ -225,17 +229,12 @@ main h2 {
 
 main h3 {
     font-size: 1.5em;
-    padding: 0.5em 0 0.5em 0;
+    padding-top: 0.5em;
 }
 
 main h4 {
     font-size: 0.9em;
-    padding: 0.5em 0 0.5em 0;
-}
-
-main .plans {
-    height: 1000px;
-    background-color: lightgreen;
+    padding: 1.3em 0 1em 0;
 }
 
 main .partner {
@@ -270,6 +269,7 @@ span.circle {
     height: 15px;
     width: 15px;
     border-radius: 100%;
+    cursor: pointer;
 }
 
 span.circle.bordered {
@@ -290,16 +290,20 @@ span.billing-type {
     padding-right: 3em;
 }
 
+.container-col-plans {
+    margin: 3em 0 3em 0;
+}
+
 .container-col-plans .col-plan {
     width: calc(100% / 3 - 40px);
-    height: 600px;
+    /* height: 800px; */
     background-color: white;
-    margin-top: 2em;
+    padding-bottom: 10em;
     border: 1px solid lightgrey;
 }
 
 .container-col-plans .col-plan:nth-child(2) {
-    margin: 2em 60px 0em 60px;
+    margin: 0 60px 0 60px;
 }
 
 .col-plan .for-who {
@@ -313,7 +317,7 @@ span.billing-type {
 }
 
 .col-plan .offer {
-    padding: 1em 0;
+    padding: 1em 0 0 0;
 }
 
 p.grey {
@@ -324,11 +328,16 @@ p.grey {
 .desc-offer ul {
     list-style-type: none;
     font-size: 0.8em;
+    padding: 3em 0;
 }
 
 .desc-offer li {
     padding-bottom: 1em;
     font-size: 1.1em;
+}
+
+.desc-offer li:last-child {
+    padding-bottom: 0em;
 }
 
 .desc-offer .li-icon {
@@ -337,4 +346,35 @@ p.grey {
 
 .desc-offer .li-desc {
     width: 93%;
+}
+
+span.purchase {
+    display: inline-block;
+    font-size: 0.9em;
+    padding: 2em 0;
+}
+
+span.purchase.underline {
+    border-bottom: 1px solid lightgrey;
+}
+
+span.purchase a,
+span.purchase a:hover,
+span.purchase a:active,
+span.purchase a:focus {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.hightlights > h4 {
+    padding: 3em 0 0 0;
+}
+
+.hightlights > ul {
+    padding: 1.5em 0;
+}
+
+.hightlights .fa-check {
+    color: var(--blue);
+    font-size: 1.2em;
 }
