@@ -503,6 +503,11 @@ span.clients a:focus {
     padding-bottom: 100%;
 }
 
+.col-squared-teams .team.bordered {
+    border: 10px solid #D1E9CD;
+    padding-bottom: calc(100% - 20px);
+}
+
 .col-squared-teams .team .logo {
     width: 60%;
     top: 50%;
