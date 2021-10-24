@@ -16,6 +16,14 @@ html {
 :root {
   --blue: #0061FF;
   --light-blue: #B4D0E7;
+  --light-green: #A2D39B;
+  --magenta: #61082C;
+  --cornflowernblue: #0893CE;
+  --light-red: #F91D1D;
+  --red: #D5001F;
+  --dark-blue: #0D2481;
+  --sugar-paper: #B4D0E7;
+  --yellow: #FFD830;
 }
 
 .relative {
@@ -44,8 +52,21 @@ html {
     margin: 0 auto;
 }
 
-.padding-tb-5 {
-    padding: 5% 0;
+.padding-tb-8 {
+    padding: 8% 0;
+}
+
+.padding-tb-4em {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.padding-t-4em {
+    padding-top: 4em;
+}
+
+.margin-top-4em {
+    margin-top: 4em;
 }
 
 .clearfix::after {
@@ -82,15 +103,6 @@ a.btn-light:active {
     text-decoration: none;
     border: 1px solid black;
     color: black;
-} 
-
-.padding-tb-4em {
-    padding-top: 4em;
-    padding-bottom: 4em;
-}
-
-.margin-top-4em {
-    margin-top: 4em;
 }
 
 /* Test layout */
@@ -249,11 +261,6 @@ main h3 {
 main h4 {
     font-size: 0.9em;
     padding: 1.3em 0 1em 0;
-}
-
-main .teams {
-    height: 700px;
-    background-color: lightyellow;
 }
 
 main .trial {
@@ -429,6 +436,8 @@ span.purchase a:focus {
 
 }
 
+/* Sezione funzionalità Dropbox Business */
+
 .features-container .col-features {
     width: calc(100% / 3 - 40px);
 }
@@ -451,3 +460,110 @@ span.purchase a:focus {
 .features-container .col-features a:active {
     color: black;
 }
+
+/* Sezione team */
+.teams .team-header .team-header-text {
+    width: 50%;
+}
+
+.teams .team-header span.clients {
+    display: inline-block;
+    padding: 2em 0;
+}
+
+span.clients a,
+span.clients a:hover,
+span.clients a:active,
+span.clients a:focus {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.squared-teams {
+    background-color: #F5F5F5;
+}
+
+.squared-teams .col-squared-teams {
+    width: 15%;
+    text-align: center;
+}
+
+.squared-teams .col-center-team {
+    width: 40%;
+}
+.col-squared-teams img {
+    width: 80%;
+    filter: invert(1);
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.col-squared-teams .team {
+    padding-bottom: 100%;
+}
+
+.col-squared-teams .team .logo {
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-squared-teams .designit {
+    background-color: var(--light-green);
+}
+
+.col-squared-teams .florida {
+    background-color: var(--cornflowernblue);
+}
+
+.col-squared-teams .arizona {
+    background-color: var(--magenta);
+}
+
+.col-squared-teams .topps {
+    background-color: var(--light-red);
+}
+
+.col-squared-teams .bicycle {
+    background-color: var(--red);
+}
+
+.col-squared-teams .planet {
+    background-color: var(--dark-blue);
+}
+
+.col-squared-teams .hearst {
+    background-color: var(--sugar-paper);
+}
+
+.col-squared-teams .clearchannel {
+    background-color: var(--yellow);
+}
+
+.col-center-team {
+    padding: 3em 3em 3em 3em;
+}
+
+.col-center-team img {
+    width: 20%;
+    display: inline-block;
+}
+
+.col-center-team .col-center-container {
+    overflow-x: scroll;
+    padding-bottom: 45%;
+}
+
+.col-center-team p {
+    margin: 4em 0;
+}
+
+.col-center-team span.line {
+    border-bottom: 1px solid lightgrey;
+    width: 5em;
+    display: inline-block;
+    margin-top: 2em;
+}
+
