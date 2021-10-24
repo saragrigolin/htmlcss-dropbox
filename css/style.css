@@ -84,8 +84,13 @@ a.btn-light:active {
     color: black;
 } 
 
-.margin-top-8em {
-    margin-top: 8em;
+.padding-tb-4em {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+.margin-top-4em {
+    margin-top: 4em;
 }
 
 /* Test layout */
@@ -235,7 +240,6 @@ main {
 
 main h2 {
     font-size: 2.5em;
-    padding-bottom: 1.5em;
 }
 
 main h3 {
@@ -245,11 +249,6 @@ main h3 {
 main h4 {
     font-size: 0.9em;
     padding: 1.3em 0 1em 0;
-}
-
-main .dropbox-features {
-    height: 1200px;
-    background-color: lightsalmon;
 }
 
 main .teams {
@@ -296,7 +295,7 @@ span.billing-type {
 }
 
 .container-col-plans {
-    margin: 3em 0 3em 0;
+    margin-top: 3em;
 }
 
 .container-col-plans .col-plan {
@@ -428,4 +427,27 @@ span.purchase a:focus {
 
 .partner-col-right .btn-light {
 
+}
+
+.features-container .col-features {
+    width: calc(100% / 3 - 40px);
+}
+
+.features-container .col-features:nth-child(3n+2) {
+    margin: 0 60px;
+}
+
+.features-container .col-features img {
+    width: 100%;
+}
+
+.features-container .col-features h3 {
+    margin: 0.3em 0 1em 0;
+}
+
+.features-container .col-features a,
+.features-container .col-features a:hover,
+.features-container .col-features a:focus,
+.features-container .col-features a:active {
+    color: black;
 }
