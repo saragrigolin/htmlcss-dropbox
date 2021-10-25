@@ -551,6 +551,10 @@ span.clients a {
     padding-bottom: calc(100% - 20px);
 }
 
+.col-squared-teams .team.bordered:hover .logo {
+    width: 60%;
+}
+
 .col-squared-teams .team:hover .logo {
     width: calc(60% + 12px);
 }
