@@ -625,3 +625,7 @@ main .trial {
 li.question:hover > ul.answer {
     display: inline-block;
 }
+
+.faq i.float-right {
+    padding-right: 3%;
+}
