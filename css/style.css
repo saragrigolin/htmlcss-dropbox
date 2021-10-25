@@ -42,6 +42,10 @@ html {
     float: right;
 }
 
+.width-20 {
+    width: 20%;
+}
+
 .width-25 {
     width: 25%;
 }
@@ -144,11 +148,6 @@ body {
     min-width: 600px;
     max-width: 2000px;
     margin: 0 auto;
-}
-
-footer {
-    height: 600px;
-    background-color: black;
 }
 
 /* Header */
@@ -576,11 +575,13 @@ span.clients a:focus {
     margin: 4em 0;
 }
 
-.col-center-team span.line {
-    border-bottom: 1px solid lightgrey;
-    width: 5em;
+.col-center-team .logo-desc::before {
+    content: '';
+    width: 10%;
+    height: 1px;
     display: inline-block;
     margin-top: 2em;
+    background-color: lightgrey;
 }
 
 /* Sezione trial, "Porta Dropbox Business nella tua azienda" */
@@ -628,4 +629,64 @@ li.question:hover > ul.answer {
 
 .faq i.float-right {
     padding-right: 3%;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+}
+
+.footer-container .first-row {
+    color: white;
+    padding-bottom: 6em;
+}
+
+footer .footer-container .first-row h3 {
+    font-size: 1.4em;
+}
+
+footer .footer-container .first-row ul {
+    padding-top: 2em;
+}
+
+footer .footer-container .first-row li {
+    padding-bottom: 1em;
+    font-size: 0.9em;
+}
+
+footer .footer-container .first-row li:last-child {
+    padding-bottom: 0em;
+}
+
+footer .footer-container .first-row a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .footer-container .first-row a:hover,
+footer .footer-container .first-row a:focus,
+footer .footer-container .first-row a:active {
+    text-decoration: underline;
+}
+
+.footer-container .second-row {
+    color: grey;
+}
+
+.footer-container .second-row .second-row-container {
+    padding-top: 3em;
+    font-size: 0.9em;
+}
+
+.footer-container .second-row .fa-sort-up {
+    vertical-align: bottom;
+}
+
+.footer-container .second-row::before {
+    content: '';
+    width: 8%;
+    height: 1px;
+    display: inline-block;
+    margin-bottom: 1em;
+    background-color: white;
 }
