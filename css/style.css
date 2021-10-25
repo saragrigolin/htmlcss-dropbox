@@ -557,6 +557,69 @@ span.clients a:focus {
     filter: invert(1);
 }
 
+.col-squared-teams .florida:hover {
+    border: 10px solid #5babce;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .florida:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .arizona:hover {
+    border: 10px solid #8d0d40;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .arizona:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .topps:hover {
+    border: 10px solid #f16a6a;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .topps:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .bicycle:hover {
+    border: 10px solid #fc2c4b;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .bicycle:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .planet:hover {
+    border: 10px solid #4256a5;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .planet:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .hearst:hover {
+    border: 10px solid #e6f2fd;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .hearst:hover .logo {
+    width: calc(60% + 12px);
+}
+
+.col-squared-teams .clearchannel:hover {
+    border: 10px solid #f8e9a5;
+    padding-bottom: calc(100% - 20px);
+}
+
+.col-squared-teams .clearchannel:hover .logo {
+    width: calc(60% + 12px);
+}
+
 .col-squared-teams .designit {
     background-color: var(--light-green);
 }
