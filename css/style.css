@@ -722,6 +722,18 @@ li.question:hover > ul.answer {
     display: inline-block;
 }
 
+li.question:hover > i.fa-chevron-down {
+    display: none;
+}
+
+li.question > i.fa-chevron-up {
+    display: none;
+}
+
+li.question:hover > i.fa-chevron-up {
+    display: inline-block;
+}
+
 .faq i.float-right {
     padding-right: 3%;
 }
