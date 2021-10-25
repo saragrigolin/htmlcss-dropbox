@@ -134,6 +134,10 @@ a.btn-white:active {
     background-color: white;
 }
 
+ul {
+    list-style-type: none;
+}
+
 /* Test layout */
 body {
     width: 100%;
@@ -186,7 +190,6 @@ nav .col-logo img {
 }
 
 nav ul.nav-menu {
-    list-style-type: none;
     line-height: 30px;
     vertical-align: middle;
 }
@@ -295,12 +298,7 @@ main h4 {
     padding: 1.3em 0 1em 0;
 }
 
-main .faq {
-    height: 800px;
-    background-color: salmon;
-}
-
-/* Piani tariffari */
+/* Sezione piani tariffari */
 
 span.circle {
     display: inline-block;
@@ -372,7 +370,6 @@ p.offer-black {
 }
 
 .desc-offer ul {
-    list-style-type: none;
     font-size: 0.8em;
     padding: 3em 0;
 }
@@ -431,7 +428,7 @@ span.purchase a:focus {
     font-size: 1.2em;
 }
 
-/* Sezione "entra in contatto con un partner" */
+/* Sezione trova un partner */
 .partner-container .partner-col-left {
     width: 55%;
 }
@@ -456,7 +453,7 @@ span.purchase a:focus {
 
 }
 
-/* Sezione funzionalità Dropbox Business */
+/* Sezione features Dropbox Business */
 
 .features-container .col-features {
     width: calc(100% / 3 - 40px);
@@ -511,13 +508,6 @@ span.clients a:focus {
 .squared-teams .col-center-team {
     width: 40%;
 }
-.col-squared-teams img {
-    width: 80%;
-    filter: invert(1);
-    object-fit: contain;
-    display: block;
-    margin: auto;
-}
 
 .col-squared-teams .team {
     padding-bottom: 100%;
@@ -533,6 +523,7 @@ span.clients a:focus {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    filter: invert(1);
 }
 
 .col-squared-teams .designit {
@@ -592,10 +583,45 @@ span.clients a:focus {
     margin-top: 2em;
 }
 
+/* Sezione trial, "Porta Dropbox Business nella tua azienda" */
 main .trial {
     background-color: var(--sugar-paper);
 }
 
 .trial .text h2 {
     color: var(--magenta);
+}
+
+/* Sezione domande frequenti */
+.faq .container-faq h3 {
+    font-size: 2em;
+    padding-bottom: 1.5em;
+}
+
+/* .faq .container-faq li.question {
+    font-weight: bold;
+} */
+
+/* .faq .container-faq span.question {
+    font-weight: bold;
+} */
+
+.faq .container-faq li.question {
+    padding: 2em 0;
+    font-weight: bold;
+    border-top: 1px solid grey;
+}
+
+.faq .container-faq li.question:last-child {
+    border-bottom: 1px solid grey;
+}
+
+.faq .container-faq ul.answer {
+    display: none;
+    font-weight: normal;
+    padding-top: 2em;
+}
+
+li.question:hover > ul.answer {
+    display: inline-block;
 }
