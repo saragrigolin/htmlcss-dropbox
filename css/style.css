@@ -599,7 +599,7 @@ span.clients a:focus {
 }
 
 .col-center-team .col-center-container {
-    overflow-x: scroll;
+    overflow-y: scroll;
     padding-bottom: 62%;
 }
 
