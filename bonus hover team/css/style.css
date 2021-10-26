@@ -251,6 +251,12 @@ ul.nav-menu a.main-menu:focus {
     border-bottom: 2px solid var(--blue);
 }
 
+ul.nav-menu a.main-menu.dropdown:hover,
+ul.nav-menu a.main-menu.dropdown:active,
+ul.nav-menu a.main-menu.dropdown:focus {
+    border-bottom: 0px;
+}
+
 ul.dropdown-content {
     display: none;
     background-color: white;
@@ -279,6 +285,26 @@ ul.dropdown-content a.dropdown-menu:focus {
     color: black;
     display: inline-block;
     width: 100%;
+}
+
+ul.nav-menu i {
+    padding-left: 10px;
+}
+
+ul.nav-menu i.fa-chevron-up {
+    display: none;
+}
+
+li:hover i.fa-chevron-up,
+li:active i.fa-chevron-up,
+li:focus i.fa-chevron-up {
+    display: inline-block;
+}
+
+li:hover i.fa-chevron-down,
+li:active i.fa-chevron-down,
+li:focus i.fa-chevron-down {
+    display: none;
 }
 
 /* Jumbotron */
