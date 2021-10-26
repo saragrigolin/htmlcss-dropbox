@@ -15,6 +15,7 @@ html {
 /* Common */
 :root {
   --blue: #0061FF;
+  --blue-hover: #3681fa;
   --light-blue: #B4D0E7;
   --light-green: #A2D39B;
   --magenta: #61082C;
@@ -34,6 +35,10 @@ html {
 
 .hidden {
     visibility: hidden;
+}
+
+.display-none {
+    display: none;
 }
 
 body {
@@ -153,17 +158,38 @@ a.btn-blue {
     background-color: var(--blue);
 }
 
+a.btn-blue:hover,
+a.btn-blue:active,
+a.btn-blue:focus {
+    background-color: var(--blue-hover);
+}
+
 a.btn-light {
     line-height: 2em;
+    width: 40%;
+    text-align: center;
     color: black;
     background-color: white;
     border: 1px solid black;
+}
+
+a.btn-light:hover,
+a.btn-light:active,
+a.btn-light:focus {
+    border: 2px solid black;
+    line-height: calc(2em - 2px);
 }
 
 a.btn-white {
     font-size: 1.1em;
     color: black;
     background-color: white;
+}
+
+a.btn-white:hover,
+a.btn-white:active,
+a.btn-white:focus {
+    background-color: rgb(241, 241, 241);
 }
 
 ul {
@@ -367,13 +393,19 @@ span.circle.empty {
     border: 1px solid lightgrey;
 }
 
+.plans .container-col-plans .col-plan.first-row {
+    min-height: 1000px;
+}
+
+
 .plans .container-col-plans .col-plan:nth-child(2) {
     margin: 0 60px 0 60px;
 }
 
-.plans .container-col-plans .col-plan:last-child {
+.plans .container-col-plans .col-plan.second-row {
     width: 100%;
     margin-top: 3em;
+
 }
 
 .col-plan .for-who {
@@ -613,6 +645,19 @@ span.clients a {
     display: inline-block;
     margin-top: 2em;
     background-color: lightgrey;
+}
+
+/* Bonus team colonna centrale */
+.col-center-container.florida-contain {
+    display: none;
+}
+
+.col-squared-teams:nth-child(2):hover ~ .col-center-team:first-child {
+    background-color: red;
+}
+
+.florida:hover .florida-contain {
+    display: block;
 }
 
 /* Sezione trial, "Porta Dropbox Business nella tua azienda" */
