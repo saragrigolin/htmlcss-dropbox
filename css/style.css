@@ -665,7 +665,7 @@ span.clients a {
 }
 
 /* Bonus team colonna centrale */
-.col-center-team.florida-contain {
+/* .col-center-team.florida-contain {
     display: none;
 }
 
@@ -675,7 +675,7 @@ span.clients a {
 
 .florida:hover .florida-contain {
     display: block;
-}
+} */
 
 /* Sezione trial, "Porta Dropbox Business nella tua azienda" */
 main .trial {
