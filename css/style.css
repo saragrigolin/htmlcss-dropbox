@@ -357,30 +357,47 @@ main h4 {
 
 /* Sezione piani tariffari */
 
-.billing span.circle {
-    display: inline-block;
-    height: 15px;
-    width: 15px;
-    border-radius: 100%;
-    cursor: pointer;
-}
-
-.billing span.circle.bordered {
-    border: 3px solid var(--blue);
-}
-
-span.circle.empty {
-    border: 1px solid grey;
-}
-
-.billing > span {
+.billing {
     line-height: 15px;
     vertical-align: middle;
 }
 
-.billing span.billing-type {
-    padding-left: 0.2em;
-    padding-right: 3em;
+.billing input[type="radio"] {
+    appearance: none;
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    vertical-align: bottom;
+    border: 1px solid grey;
+}
+
+.billing input[type="radio"]:checked {
+    opacity: 0;
+}
+
+.billing label {
+    margin-right: 1em;
+    position: relative;
+}
+
+.billing input:checked + label::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+    content: '';
+    width: 10px;
+    height: 10px;
+    margin-left: -19px;
+    display: inline-block;
+    border: 3px solid var(--blue);
+    border-radius: 100%;
+}
+
+.billing input::not(:checked) + label::before {
+    display: none;
 }
 
 .plans .container-col-plans {
@@ -648,11 +665,11 @@ span.clients a {
 }
 
 /* Bonus team colonna centrale */
-.col-center-container.florida-contain {
+.col-center-team.florida-contain {
     display: none;
 }
 
-.col-squared-teams:nth-child(2):hover ~ .col-center-team:first-child {
+.col-squared-teams:nth-child(1):hover ~ .col-center-team.designit-contain {
     background-color: red;
 }
 

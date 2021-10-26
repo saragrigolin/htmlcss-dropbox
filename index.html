@@ -88,10 +88,18 @@
                 <h2>Trova il piano Dropbox Business che fa per te</h2>
                 
                 <!-- fatturazione mensile o annuale -->
-                <div class="billing margin-top-4em">
+                <!-- <div class="billing margin-top-4em">
                     <span class="circle bordered"></span><span class="billing-type">Fatturazione mensile</span>
                     <span class="circle empty"></span><span class="billing-type">Fatturazione annuale</span>
-                </div>
+                </div> -->
+                <form action="#">
+                    <div class="billing margin-top-4em">
+                        <input type="radio" name="plan" id="month">
+                        <label for="month">Fatturazione mensile</label>
+                        <input type="radio" name="plan" id="year">
+                        <label for="year">Fatturazione annuale</label>
+                    </div>
+                </form>
                 <!-- /fatturazione mensile o annuale -->
             </header>
             
@@ -509,8 +517,8 @@
                         <img class="logo absolute" src="img/topps.svg" alt="">
                     </div>
                 </div>
-                <div class="col-center-team width-40 float-left">
-                    <div class="col-center-container designit-contain relative">
+                <div class="col-center-team width-40  designit-contain float-left">
+                    <div class="col-center-container relative">
                         <img src="img/designit.svg" alt="" class="width-20">
                         <div class="logo-desc absolute">
                             <p>"I membri del nostro team lavorano costantemente in Paesi, fusi orari e uffici
@@ -520,11 +528,13 @@
                             <span>Morten Thomsen, Global IT Lead</span>
                         </div>
                     </div>
-                    <div class="col-center-container florida-contain relative">
+                </div>
+                <div class="col-center-team width-40 florida-contain float left">
+                    <div class="col-center-container relative">
                         <img src="img/university_of_florida.svg" alt="" class="width-20">
                         <div class="logo-desc absolute">
                             <p>“I nostri utenti hanno svolto un ottimo lavoro in Dropbox senza alcun aiuto. La distribuzione di un account
-                            centralizzato ha permesso di proseguire tale lavoro senza interruzioni, nel modo più sicuro possibile”..</p>
+                                centralizzato ha permesso di proseguire tale lavoro senza interruzioni, nel modo più sicuro possibile”..</p>
                             <span>Elias Eldayrie, vicepresidente e CIO</span>
                         </div>
                     </div>
