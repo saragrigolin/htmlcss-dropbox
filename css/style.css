@@ -253,12 +253,12 @@ ul.nav-menu a.main-menu:focus {
 
 ul.dropdown-content {
     display: none;
-    background-color: #f9f9f9;
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
     padding: 1.5em 0;
     width: 100%;
     left: 50%;
-    right: auto;
+    /* right: auto; */
     text-align: center;
     transform: translate(-50%, 0);
 }
@@ -664,19 +664,6 @@ span.clients a {
     background-color: lightgrey;
 }
 
-/* Bonus team colonna centrale */
-/* .col-center-team.florida-contain {
-    display: none;
-}
-
-.col-squared-teams:nth-child(1):hover ~ .col-center-team.designit-contain {
-    background-color: red;
-}
-
-.florida:hover .florida-contain {
-    display: block;
-} */
-
 /* Sezione trial, "Porta Dropbox Business nella tua azienda" */
 main .trial {
     background-color: var(--sugar-paper);
@@ -700,6 +687,10 @@ main .trial {
 
 .faq .container-faq li.question:last-child {
     border-bottom: 1px solid grey;
+}
+
+.faq .container-faq ul.answer a {
+    color: black;
 }
 
 .faq .container-faq ul.answer {
