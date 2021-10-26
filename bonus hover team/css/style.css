@@ -735,19 +735,6 @@ span.purchase a {
     display: inline-block;
 }
 
-/* Bonus team colonna centrale */
-.col-center-team .florida-contain {
-    display: none;
-}
-
-.col-squared-teams .florida:hover .col-center-team .designit-contain {
-    background-color: red;
-}
-
-.florida:hover .florida-contain {
-    display: block;
-}
-
 /* Sezione trial, "Porta Dropbox Business nella tua azienda" */
 main .trial {
     background-color: var(--sugar-paper);
